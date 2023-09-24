@@ -77,7 +77,23 @@ $$.
 - **velocity autocorrelation functions :**
   - $$ C_{v_{||}}(t) = \langle v_x(t) v_x(0) \rangle$$
   - $$ C_{v_{⊥}}(t) = \langle v_y(t) v_y(0) \rangle$$
+Where:
 
+- $Cv_{\parallel}(\tau)$ and $Cv_{\perp}(\tau)$ are the VACFs for the x (parallel) and y (perpendicular) directions, respectively.
+- $v_x(\tau)$ and $v_x(0)$ symbolize the particle velocities along the x-axis at times $\tau$ and 0.
+- The ensemble average is represented by the brackets $\langle \rangle$, which practically signifies an average over multiple simulations or observations.
+
+#### Properties of VACF
+
+- **Symmetry**: The VACF is symmetric about the y-axis, i.e., $Cv(\tau) = Cv(-\tau)$. This showcases that the velocity correlation remains consistent irrespective of the direction of time lapse by $\tau$.
+- **Normalization**: The VACF peaks at $\tau = 0$ because a particle's velocity is perfectly self-correlated at that instant.
+- **Decay**: The correlation usually wanes with increasing $\tau$. The decay characteristics are insightful for understanding particle motion specifics.
+#### Why is VACF Important?
+
+The VACF sheds light on:
+
+1. **Particle Motion**: A rapid decay of the VACF in gases implies molecules swiftly forget their past velocities.
+2. **Transport Properties**: The diffusion coefficient, a pivotal descriptor of particle spread in a medium, is derived from the time integral of the VACF.
 
 ### 5. Power Law Representation of MSD:
 - Oversimplified model for understanding anomalous diffusion.
@@ -91,6 +107,8 @@ $$.
 - **Normal Diffusion:** Coincides with a Gaussian fit at long time lags (e.g., 40s).
 - **Subdiffusion:** Central portion (small displacements) is Gaussian at intermediate time lags (e.g., 10s), but large displacements are less likely.
 - **Superdiffusion:** Large displacements more probable than in normal diffusion at short time lags (e.g., 1s).
+
+
 
 ## 1.3 Case study
 
